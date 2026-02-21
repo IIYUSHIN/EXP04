@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "EXP04 Backend Experiments - REST API and Redis Locking",
     "scripts": {
+        "start": "node EXP04-B/server.js",
         "EXP04-B": "nodemon EXP04-B/server.js",
         "EXP04-C": "nodemon EXP04-C/index.js"
     },
