@@ -1,0 +1,22 @@
+{
+    "name": "exp04",
+    "version": "1.0.0",
+    "description": "EXP04 Backend Experiments - REST API and Redis Locking",
+    "scripts": {
+        "EXP04-B": "nodemon EXP04-B/server.js",
+        "EXP04-C": "nodemon EXP04-C/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^17.3.1",
+        "express": "^5.2.1",
+        "mongoose": "^9.2.1",
+        "redis": "^5.11.0",
+        "uuid": "^13.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}
