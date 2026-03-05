@@ -4,7 +4,7 @@
 const app = require("./src/app");
 const { connectRedis } = require("./src/config/redis");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Start the server by first connecting to Redis, then listening for HTTP requests
 const startServer = async () => {

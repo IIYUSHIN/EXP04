@@ -3,8 +3,12 @@
 
 const { createClient } = require("redis");
 
-// Create a Redis client that connects to localhost:6379 (default Docker Redis port)
-const redisClient = createClient();
+// Create a Redis client
+// - Locally: connects to localhost:6379 (Docker Redis)
+// - On Railway: connects to cloud Redis via REDIS_URL environment variable
+const redisClient = createClient(
+    process.env.REDIS_URL ? { url: process.env.REDIS_URL } : {}
+);
 
 // Log any Redis connection errors to the console
 redisClient.on("error", (err) => {
