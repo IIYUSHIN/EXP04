@@ -21,4 +21,7 @@ const bookSeat = (seatId) => {
     seats[seatId] = "booked";
 };
 
-module.exports = { getSeatStatus, bookSeat };
+// Get all seats and their statuses
+const getAllSeats = () => ({ ...seats });
+
+module.exports = { getSeatStatus, bookSeat, getAllSeats };
